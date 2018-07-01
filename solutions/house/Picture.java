@@ -50,13 +50,6 @@ public class Picture
         roof.moveVertical(-60);
         roof.makeVisible();
 
-        sun = new Circle();
-        sun.changeColor("blue");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
-        sun.makeVisible();
-        
         sun2 = new Circle();
         sun2.changeColor("yellow");
         sun2.moveHorizontal(50);
@@ -64,6 +57,21 @@ public class Picture
         sun2.changeSize(40);
         sun2.makeVisible();
         
+        sun = new Circle();
+        sun.changeColor("blue");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-40);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(300);
+        
+        person = new Person();
+        person.moveHorizontal(100);
+        person.moveVertical(20);
+        person.makeVisible();
+        person.slowMoveHorizontal(-120);
+        person.makeInvisible();       
+                
         
     }
 

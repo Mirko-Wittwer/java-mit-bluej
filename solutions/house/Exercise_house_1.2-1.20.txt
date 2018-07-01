@@ -1,0 +1,45 @@
+1.9
+- die diversen Figuren sichtbar machen
+- an die entsprechenden Positionen bringen
+- die Farben und größen ändern
+- womöglich das es auf verschiedene arten erstellt werden kann
+
+1.14
+- die Klasse Picture ruft die Methode draw() auf daraufhin werden die einzelnen figuren erstellt
+- die figuren werden dann noch an die richtige Position bewegt damit es dem Bild entspricht
+
+1.16
+- Picture.java, ab Zeile 53
+sun = new Circle();
+sun.changeColor("blue");
+
+1.17
+- Picture.java, Zeile 18 und ab 60
+private Circle sun2;
+
+sun2 = new Circle();
+sun2.changeColor("yellow");
+sun2.moveHorizontal(50);
+sun2.moveVertical(-20);
+sun2.changeSize(40);
+sun2.makeVisible();
+
+1.18
+- Picture.java, Zeile 66
+sun.slowMoveVertical(500);
+
+1.19
+- ?
+
+1.20
+- Picture.java, ab Zeile 68
+person = new Person();
+person.moveHorizontal(100);
+person.moveVertical(20);
+person.makeVisible();
+person.slowMoveHorizontal(-120);
+person.makeInvisible(); 
+
+
+
+
