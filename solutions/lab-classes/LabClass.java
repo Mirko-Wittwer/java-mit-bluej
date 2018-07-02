@@ -14,8 +14,6 @@ public class LabClass
     private String timeAndDay;
     private ArrayList<Student> students;
     private int capacity;
-    private String send;
-    private int average;
     
     /**
      * Create a LabClass with a maximum number of enrolments. All other details
@@ -89,29 +87,5 @@ public class LabClass
             student.print();
         }
         System.out.println("Number of students: " + numberOfStudents());
-    }
-    
-    /* Exercise 1.33
-     * die Methode senden erstellen 
-     */
-    public void setSend(String adresse)
-    {
-        send = adresse;
-    }
-    
-    /* Exercise 1.34
-     * eingabe des Wertes
-     */
-    public void setAverage(int average2)
-    {
-        average = average2;
-    }
-    
-    /* Wert zurückgeben.
-     * 
-     */
-    public int averageReturn()
-    {
-        return average();
     }
 }
