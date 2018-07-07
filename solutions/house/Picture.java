@@ -63,7 +63,7 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(300);
+        //sun.slowMoveVertical(300);
         
         person = new Person();
         person.moveHorizontal(100);
@@ -117,5 +117,10 @@ public class Picture
         person.moveHorizontal(180);
         person.slowMoveHorizontal(-200);
         person.makeInvisible();
+    }
+    
+    public void sunset()
+    {
+        sun.slowMoveVertical(300);
     }
 }

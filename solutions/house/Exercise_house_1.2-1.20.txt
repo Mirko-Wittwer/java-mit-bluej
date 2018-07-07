@@ -29,7 +29,10 @@ sun2.makeVisible();
 sun.slowMoveVertical(500);
 
 1.19
-- ?
+- ab Zeile 122 in Picture.java
+public void sunset(){
+sun.slowMoveVertical(300);}
+
 
 1.20
 - Picture.java, ab Zeile 68
