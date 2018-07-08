@@ -17,23 +17,19 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
-    
-    private int status;
+    // wie oft geld eingeworfen wurde
+    private int count;
 
     /**
      * Create a machine that issues tickets of the given price.
      */
     public TicketMachine()
     {
+        price = 1000;
         balance = 0;
         total = 0;
     }
 
-    public TicketPrice()
-    {
-        price = 1000;
-    }
-    
     /**
      * @Return The price of a ticket.
      */
@@ -51,6 +47,11 @@ public class TicketMachine
         return balance;
     }
 
+    public int getTotal()
+    {
+        return total;
+    }
+    
     /**
      * Receive an amount of money from a customer.
      * Check that the amount is sensible.
@@ -59,6 +60,7 @@ public class TicketMachine
     {
         if(amount > 0) {
             balance = balance + amount;
+            count++;
         }
         else {
             System.out.println("Use a positive amount rather than: " +
@@ -106,18 +108,26 @@ public class TicketMachine
         return amountToRefund;
     }
     
-    public int getTotal()
+   public void prompt()
     {
-        return total;
+        System.out.println("Please insert the correct amount of money.");
     }
     
     public void showPrice()
     {
-        System.out.println("The price of a ticket is " + price + " cents.");        
+        System.out.println("The price of a ticket is " + price + " cents.");
     }
     
-    public void empty()
+    public void countInfo()
+    {
+        System.out.println(count);
+        System.out.println(total);
+    }
+        
+        public void empty()
     {
         total = 0;
     }
+    
+    
 }
