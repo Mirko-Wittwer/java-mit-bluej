@@ -7,7 +7,7 @@
 1.31
 0 = int
 "hello" = String
-101 = byte
+101 = int
 -1 = int
 true = boolean
 "33" = String
@@ -32,19 +32,23 @@ public void senden(String sendeWas)
 }
 
 1.34
-public Mittelwert(int wert1, int wert2)
-{	zahl1 = wert1;
-	zahl2 = wert2;
-	return zahl1;
-}
+- ab Zeile 94 in LabClass.java
+private int zahl1;
+private int zahl2;
+...
+...
+...
+public void Mittelwert(int wert1, int wert2){
+zahl1 = wert1;
+zahl2 = wert2;
+return wert1;}
 
 1.35
 - Allgemein gesehen stellen die Bücher eine Klasse dar.
 - Und jedes einzelne individuelle Buch, in diesem Fall "Java lernen mit BlueJ", repräsentiert das Objekt.
 
 1.36
-- Ein Objakt kann mehrere Klassen besitzen. Beispiel Auto. Objekt=Auto -> Auto besteht aus weiteren Teilen wie Motor, Türen, Räder. Und diese einzelnen Bereiche können auch aus Klassen bestehen.
-
+- Ein Objakt kann nur eine Klassen besitzen.
 
 
 

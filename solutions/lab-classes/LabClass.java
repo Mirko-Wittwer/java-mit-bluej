@@ -14,6 +14,8 @@ public class LabClass
     private String timeAndDay;
     private ArrayList<Student> students;
     private int capacity;
+    private int zahl1;
+    private int zahl2;
     
     /**
      * Create a LabClass with a maximum number of enrolments. All other details
@@ -88,4 +90,12 @@ public class LabClass
         }
         System.out.println("Number of students: " + numberOfStudents());
     }
+    
+    public void Mittelwert(int wert1, int wert2)
+    {
+        zahl1 = wert1;
+        zahl2 = wert2;
+        return zahl1;
+    }
+        
 }
