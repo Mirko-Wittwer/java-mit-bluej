@@ -10,7 +10,7 @@
  * @version 2011.07.31
  */
 public class TicketMachine
-{
+    {
     // The price of a ticket from this machine.
     private int price;
     // The amount of money entered by a customer so far.
@@ -19,7 +19,8 @@ public class TicketMachine
     private int total;
     // wie oft geld eingeworfen wurde
     private int count;
-
+    
+    
     /**
      * Create a machine that issues tickets of the given price.
      */
@@ -29,7 +30,14 @@ public class TicketMachine
         balance = 0;
         total = 0;
     }
-
+    
+    public TicketMachine(int ticketPrice)
+    {
+    price = ticketPrice; 
+    balance = 0; 
+    total = 0;
+    }
+    
     /**
      * @Return The price of a ticket.
      */
@@ -63,8 +71,7 @@ public class TicketMachine
             count++;
         }
         else {
-            System.out.println("Use a positive amount rather than: " +
-                               amount);
+            System.out.println("Use a positive amount rather than: " + amount);
         }
     }
 
@@ -108,7 +115,7 @@ public class TicketMachine
         return amountToRefund;
     }
     
-   public void prompt()
+    public void prompt()
     {
         System.out.println("Please insert the correct amount of money.");
     }
@@ -129,5 +136,5 @@ public class TicketMachine
         total = 0;
     }
     
-    
-}
+   
+  }
