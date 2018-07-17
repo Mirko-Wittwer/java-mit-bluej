@@ -1,0 +1,366 @@
+2.2
+- der Wert 0
+
+2.3
+- bei zu wenig Geld werde ich aufgefordert mehr Money in die Maschine zu stopfen
+- bei zuviel Geld passiert gar nichts (keine Rückerstattung)
+
+2.5
+- nein die Ausgabe in der Konsole ist identisch bis auf den Preis
+
+2.6
+- public class Student {}
+- public class LabClass {}
+
+2.7
+- im Klassendiagramm wird die Klasse "TicketMachine" mit roten Strichen dargestellt
+- TicketMachine lässt sich nicht mehr übersetzen
+- kann nicht identifiziert werden (Error found in class)
+- für mich wird der Fehler nicht klar erläutert
+
+2.8
+- beim entfernen des Wortes public aus der Klasse ensteht keine Fehlermeldung
+
+2.9
+- beim entfernen des Wortes class ensteht eine Fehlermelung
+
+2.10
+- fields: private int price, private int balance, private int total
+- constructor: public TicketMachine(int cost)
+- methods: public int refundBalance(), public void printTicket(), public int getBalance(), public int getPrice()
+
+2.11
+- Datentyp int wird in der Klammer angegeben nicht wie bei der Methode
+- der Konstruktor gibt die Parameter vor
+- Konstruktor hat den selben Namen wie die Klasse
+- Konstruktoren werden vor allem groß geschrieben dagegen werden Methoden klein geschrieben
+
+
+2.12
+- private int count -> int
+- private Student representative -> Student
+- private Server host -> Server
+
+2.13
+- private boolean alive -> alive
+- private Person tutor -> tutor
+- private Game game -> game
+
+2.14
+- Klassennamen -> Student, Server, Person, Game
+
+2.15
+- es ist von Bedeutung in welcher Reihenfolge die Wörter stehen
+- wird die korrekte Reihenfolge verändert wird ein Fehler ausgegeben
+- Fehler lautet "illegal start of type" oder <identifier> expected
+
+2.16
+- Ja, ein Semikolon ist wichtig.
+
+2.17
+- private int status;
+
+2.18
+- zur Klasse Student
+
+2.19
+- es sind zwei Parameter mit den Typen String und double
+
+2.20
+- ja, dass wäre durchaus möglich
+- typ -> String und double
+- namen -> sind title und price
+
+2.21
+- public Pet(String petsName) {name = petsName;}
+
+2.22
+- public Date ( String month, int day, int year)
+
+2.23
+- getBalance: gibt den Gesamtbetrag an der bisher in den Automaten eingeworfen wurde
+- getPrice: gibt den Ticketpreis an (Anfangswert)
+
+2.24
+- Wie lautet der aktuell eingezahlte Betrag?
+
+2.25
+- Nein muss nicht geändert werden, da sie unabhängig von einander agieren.
+
+2.26
+- ab Zeile 58 in TicketMachine.java
+public int getTotal(){
+return total;}
+
+2.27
+- missing return statement
+
+2.28
+- bei getPrice() steht int davor und bei printTicket() steht davor void
+- desweiteren gibt getPrice einen Wert zurück was bei printTicket nicht der Fall ist
+
+2.29
+- bei beiden Methode steht void im Kopfbereich daran erkennt man das sie keine Rückgabeanweisungen enthalten
+
+2.31
+- weil es einen Wert erwarten
+- Methoden haben nicht die selbe Bezeichnung wie die KLasse, was bei den Konstruktoren der Fall ist
+
+2.32
+public void setPrice(int cost){
+price = cost;}
+
+2.33
+public void increase(int points){
+score = score + points;}
+
+2.34
+- es ist eine verändernde Methode da die Parameter vom Datenfelder verändert werden
+- Nachweisen? -> wenn ich wie in diesem Fall score erneut aufrufe, würde man erkennen das sich der Wert verändert hat
+
+2.35
+public void discount(int amount){
+preis = price - amount;}
+
+2.36
+- folgendes wird ausgegeben: My cat has green eyes.
+
+2.37
+- ab Zeile 118 in TicketMachine.java
+public void prompt(){
+System.out.println("Please insert the correct amount of money.");}
+
+2.38
+- price würde als Text ausgegeben werden da es als String erkannt wird
+
+2.39
+- alles was in den Anführungsstrichen steht wird als Text ausgegeben -> # price cents.
+
+2.40
+- nein, weil price als String hinterlegt ist
+- hat aber auch keinerlei bezug auf andere Ticketautomaten
+
+2.41
+- ab Zeile 123 in TicketMachine.java
+public void showPrice(){
+System.out.println("The price of a ticket is " + price + " cents.");}
+
+2.42
+- es wurden unterschiedliche Ticketpreise ausgegeben
+- Warum? -> Der Parameter price ist private und kann daher nur innerhalb der Klasse aufgerufen werden. Das bedeutet mit dem Aufrufen der Methode showPrice habe ich nicht die Möglichkeit auf eine andere Klasse zuzugreifen.
+
+2.43
+- ab Zeile 27 in TicketMachine.java
+public TicketMachine(){
+price = 1000; balance = 0; total = 0;}
+- ich werde nicht mehr nach dem Preis eines Tickets gefragt
+- der Preis ist fest
+- im ganzen Programm wird jetzt mit den Wert 1000 gearbeitet
+
+2.44
+public TicketMachine(){
+price = 1000; balance = 0; total = 0;}
+
+public TicketMachine(int ticketPrice){
+price = ticketPrice; balance = 0; total = 0;}
+- es wurden zwei eigenständige Ticketautomaten generiert
+- TicketMachine 1 hat keinen Einfluss auf TicketMachine 2, genau so umgekehrt
+
+
+2.45
+- ab Zeile 134 in TicketMachine.java
+public void empty(){
+total = 0;}
+- diese Methode benötigt keine Parameter
+- es ist eine verändernde Methode, da der Zustand des Objekts verändert wird
+
+2.46
+- nach Erzeugung der Instanz TicketMachine und das aufrufen der Methode balance wird mir der Wert 0 ausgegeben -> was korrekt ist
+- wenn ich Geld einwerfe bekomme ich beim aufrufen der Methode balance die Gesamtsumme des eingeworfenen Geldes angezeigt
+- eine Fehlermeldung wird bei mir nicht generiert
+- wenn ich 0 eingebe bei insertMoney erhalte ich die Mitteilung "Use a positive amount rather than: 0"
+
+2.47
+Bei größer Null werde ich aufgefordert einen positiven Wert einzugeben. Ändere ich den Code in größer gleich Null gehört der Wert Null zu den erlaubten Parametern. Und ich erhalte nur noch eine Mitteilung wenn ich einen negativen Wert eingebe.
+
+2.48
+public void insertMoney(int amount)
+    {
+        if(amount <= 0) {
+            System.out.println("Use a positive amount rather than: " + amount);
+        }
+        else {
+            balance = balance + amount;
+            count++;
+        }
+    }
+
+2.49
+- Eigenschaft: isVisible
+- waren zwei Werte angemessen? -> ja, da der Kreis nur zwei Zustände einnehmen kann -> sichtbar und unsichtbar
+
+2.50
+- beim Code 2.8 wurde eine if-else Anweisung angewendet
+- beim Code 2.1 wird die Methode printTicket ohne jeglich Überprüfung ausgegeben
+- beim Code 2.8 wird überprüft ob genug Geld eingezahlt wurde, erst wenn dies der Fall ist wird der Text ausgegeben
+
+2.51
+- ja ein entfernen der else Anweisung ist möglich ohne das eine Fehlermeldung erscheint(Code wird kompiliert)
+- aber es ist jetzt nicht mehr möglich das Ticket auszudrucken
+
+2.52
+- nur wenn der Ticketpreis höher ist als der Wert für "balance"
+
+2.54
+private int ersparnis;
+.
+.
+.
+public void getRabatt(int rabatt){
+ersparnis = price / 100 * rabatt;}
+
+public void showErsparnis(){
+System.out.println(ersparnis);}
+
+2.55
+public int getMean(int total, int count){
+int mean = total / count; return mean;}
+
+2.56
+public void vergleich(){
+if(price > budget){
+System.out.println("Zu teuer");}
+else{System.out.println("Passt");}}
+
+2.57
+public void vergleich(){
+if(price > budget){
+System.out.println("Ihr Budget liegt bei " + budget + " cent");}
+else{System.out.println("Passt");}}
+
+2.58
+1. balance wird in der Methode auf 0 gesetzt und ausgegeben
+2. ist die Variable amountToRefund gar nicht deklariert
+
+2.59
+- es kann nicht ausgeführt werden da eine Fehlermeldung entsteht
+- balance bekommt keinen Wert zugewiesen und wird ausgegeben und im Anschluss wird die Variable auf 0 zurückgesetzt
+
+2.60
+- price ist bereits deklariert daher ist int vor price überflüssig
+- es lässt sich komilieren
+- der Ticket-Peis wirt mir mit dem Wert 0 ausgegeben
+- ursache dafür ist int vor price, somit wird der Wert nicht übergeben und bleibt in der Methode
+
+2.61
+public int emptyMachine(){
+return total;
+total = 0;}
+
+2.62
+
+public void printTicket()
+    {
+	int nochZuZahlen;
+	balance = balance - price;
+	nochZuZahlen = balance;
+	
+        if(nochZuZahlen >= 0) {
+            // Simulate the printing of a ticket.
+            System.out.println("##################");
+            System.out.println("# The BlueJ Line");
+            System.out.println("# Ticket");
+            System.out.println("# " + price + " cents.");
+            System.out.println("##################");
+            System.out.println();
+
+            // Update the total collected with the price.
+            total = total + price;
+            			
+        }
+        else {
+            System.out.println("You must insert at least: " + (price - balance) + " more cents.");
+                    
+        }
+    }
+- beim Testen habe ich leider das Problem das immer der Wert 1000 draufgerechnet werden, kann mir aber nicht erklären warum
+
+2.63
+/
+
+2.64
+name -> code
+type -> String
+
+2.65
+name der Methode -> setCredits
+name des Parameters -> creditValue
+type -> int
+
+2.66
+public class Person{}
+
+2.67
+private String name;
+private int age;
+private String code;
+private int credits;
+
+2.68
+public Modul(String moduleCode){
+code = moduleCode;}
+
+2.69
+private Person(String myName, int myAge){
+name = myName;
+age = myAge;}
+
+2.70
+public int getAge(){
+return age;}
+
+2.71
+public String getName(){
+return name;}
+
+2.72
+public void setAge(int wert){
+age = wert;}
+
+2.73
+private String name;
+.
+.
+public void printDetails(String nameEingeben){
+name = nameEingeben;
+System.out.println("The name of this person is " + name + ".");}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
