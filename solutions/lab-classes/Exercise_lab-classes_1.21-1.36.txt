@@ -48,21 +48,41 @@ return wert1;}
 - Und jedes einzelne individuelle Buch, in diesem Fall "Java lernen mit BlueJ", repräsentiert das Objekt.
 
 1.36
-- Ein Objakt kann nur eine Klassen besitzen.
+- Ein Objekt kann nur eine Klassen besitzen.
 
+2.75
+"Henr557"
 
+2.76
+Beim aufrufen des Objekts getLoginName erscheint eine Fehlermeldung. Warum? -> Das Objekt erwartet für den Namen 4 Zeichen. Es sind aber nur 3 Zeichen vorhanden. Daher die Fehlermeldung.
 
+2.77
+in lab-classes/Student ab Zeile 26
+if(name.length()<4 || id.length()<3)
+{System.out.println("zu wenig Zeichen");}
 
+2.78
+in lab-classes/Student ab Zeile 77
+public String getLoginName(){
+return name + id;}
 
+2.79
+102 -> 102
+Seewolf -> "Seewolf"
+See9 -> "See9"
+12See -> "12See"
+See39 -> "See39"
+Error -> "w"
+wolf -> Exception: java.lang.StringIndexOutOfBoundsException (String index out of range: 8)
 
+Ja, der Umgang mit Substrings.
 
+2.81
+- bei eingabe von t2.getBalance() müsste als ausgabe 500 erschein
 
-
-
-
-
-
-
+2.82
+- ich würde erwarten das bei Eingabe von t2.getBalance() als Ergebnis 1000 erscheint
+- die Verbindung ist der Code -> TicketMachine t2 = t1;
 
 
 

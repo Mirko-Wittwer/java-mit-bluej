@@ -23,6 +23,10 @@ public class Student
         name = fullName;
         id = studentID;
         credits = 0;
+        if(name.length()<4 || id.length()<3)
+    {
+    System.out.println("zu wenig Zeichen");
+    }
     }
 
     /**
@@ -72,7 +76,7 @@ public class Student
      */
     public String getLoginName()
     {
-        return name.substring(0,4) + id.substring(0,3);
+        return name + id;
     }
     
     /**

@@ -95,7 +95,7 @@ public class LabClass
     {
         zahl1 = wert1;
         zahl2 = wert2;
-        return zahl1;
+        
     }
         
 }
