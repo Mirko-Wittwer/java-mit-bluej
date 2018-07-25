@@ -1,0 +1,85 @@
+2.83
+in book-exercise ab Zeile 26
+public String getAuthor(){
+return author;}
+public String getTitle(){
+return title;}
+
+2.84
+in book-exercise ab Zeile 36
+public void printAuthor(){
+System.out.println("Author: " + author + ".");}
+    
+public void printTitle(){
+System.out.println("Title: " + title + ".");}
+
+2.85
+in book-exercise, Zeile 14
+private int pages;
+
+in book-exercise, ab Zeile 38
+public int getPages(){
+return pages;}
+
+2.86
+in book-exercise, ab Zeile 53
+public void printDetails(){
+System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages);}
+
+2.87
+in book-exercise, Zeile 15
+private String refNumber;
+
+in book-exercise, Zeile 26
+refNumber = "";
+
+in book-exercise, ab Zeile 61
+public void setRefNumber(String ref){
+refNumber = ref;}
+
+public String getRefNumber(){
+return refNumber;}
+
+2.88
+in book-exercise ab Zeile 61
+public void printDetails()
+{if (refNumber.length() > 0 ){
+  System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: " + refNumber);}
+else{
+  System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: ZZZ");
+}}
+
+2.89
+in book-exercise ab Zeile 75
+public void setRefNumber(String ref){
+if(ref.length() >= 3){refNumber = ref;}
+else{System.out.println("Zu kurz!");}}
+
+2.90
+private int borrowed; 	(in book-exercise Zeile 16)
+.
+.
+public void borrow()	(in book-exercise ab Zeile 91)
+{borrowed++;}
+
+public int getBorrowed()	(in book-exercise ab Zeile 96)
+{return borrowed;}
+
+2.91
+private boolean courseText;		(in book-exercise Zeile 17)
+
+courseText = true;				(in book-exercise Zeile )
+
+private void isCourseText()	(in book-exercise ab Zeile 103)
+{}
+
+
+
+
+
+
+
+
+
+
+ 
