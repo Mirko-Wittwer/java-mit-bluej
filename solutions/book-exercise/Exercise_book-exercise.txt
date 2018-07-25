@@ -1,12 +1,12 @@
 2.83
-in book-exercise ab Zeile 26
+in book-exercise ab Zeile 35
 public String getAuthor(){
 return author;}
 public String getTitle(){
 return title;}
 
 2.84
-in book-exercise ab Zeile 36
+in book-exercise ab Zeile 50
 public void printAuthor(){
 System.out.println("Author: " + author + ".");}
     
@@ -22,7 +22,7 @@ public int getPages(){
 return pages;}
 
 2.86
-in book-exercise, ab Zeile 53
+in book-exercise, ab Zeile 65
 public void printDetails(){
 System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages);}
 
@@ -30,18 +30,19 @@ System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Page
 in book-exercise, Zeile 15
 private String refNumber;
 
-in book-exercise, Zeile 26
+in book-exercise, Zeile 28
 refNumber = "";
 
-in book-exercise, ab Zeile 61
+in book-exercise, ab Zeile 74
 public void setRefNumber(String ref){
 refNumber = ref;}
 
+in book-exercise, ab Zeile 88
 public String getRefNumber(){
 return refNumber;}
 
 2.88
-in book-exercise ab Zeile 61
+in book-exercise ab Zeile 65
 public void printDetails()
 {if (refNumber.length() > 0 ){
   System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: " + refNumber);}
@@ -50,7 +51,7 @@ else{
 }}
 
 2.89
-in book-exercise ab Zeile 75
+in book-exercise ab Zeile 79
 public void setRefNumber(String ref){
 if(ref.length() >= 3){refNumber = ref;}
 else{System.out.println("Zu kurz!");}}
