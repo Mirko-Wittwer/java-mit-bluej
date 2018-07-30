@@ -77,6 +77,15 @@ wolf -> Exception: java.lang.StringIndexOutOfBoundsException (String index out o
 
 Ja, der Umgang mit Substrings.
 
+2.80
+TicketMachine t1 = new TicketMachine(1000);
+
+t1.getBalance() -> es wird 0 zurückgegeben
+
+t1.insertMoney(500);
+
+t1.getBalance() -> jetzt hat er mir den Wert 500 zurückgegeben 
+
 2.81
 - bei eingabe von t2.getBalance() müsste als ausgabe 500 erschein
 
