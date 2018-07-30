@@ -15,16 +15,16 @@ System.out.println("Title: " + title + ".");}
 
 2.85
 in book-exercise, Zeile 14
-private int pages;
+private int pagesNumber;
 
 in book-exercise, ab Zeile 38
 public int getPages(){
-return pages;}
+return pagesNumber;}
 
 2.86
 in book-exercise, ab Zeile 65
 public void printDetails(){
-System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages);}
+System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pagesNumber);}
 
 2.87
 in book-exercise, Zeile 15
@@ -45,9 +45,9 @@ return refNumber;}
 in book-exercise ab Zeile 65
 public void printDetails()
 {if (refNumber.length() > 0 ){
-  System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: " + refNumber);}
+  System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pagesNumber + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: " + refNumber);}
 else{
-  System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: ZZZ");
+  System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pagesNumber + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: ZZZ");
 }}
 
 2.89

@@ -11,7 +11,7 @@ class Book
     // The fields.
     private String author;
     private String title;
-    private int pages;
+    private int pagesNumber;
     private String refNumber;
     private int borrowed;
     private boolean courseText;
@@ -20,11 +20,11 @@ class Book
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int Pages)
+    public Book(String bookAuthor, String bookTitle, int pages)
     {
         author = bookAuthor;
         title = bookTitle;
-        pages = Pages;
+        pagesNumber = pages;
         refNumber = "";
         borrowed = 0;
         courseText = true;
@@ -44,7 +44,7 @@ class Book
     
     public int getPages()
     {
-        return pages;
+        return pagesNumber;
     }
     
     /*public void printAuthor()
@@ -59,15 +59,15 @@ class Book
     
     /*public void printDetails()
     {
-        System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages);
+        System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pagesNumber);
     }*/
     
     public void printDetails()
     {
         if (refNumber.length() > 0 ){
-            System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: " + refNumber);}
+            System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pagesNumber + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: " + refNumber);}
         else{
-            System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pages + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: ZZZ");
+            System.out.println("Title: " + title + ", " + "Author: " + author + ", " + "Pages: " + pagesNumber + ", " + "Ausgeliehen: " + borrowed + ", " + "RefNumber: ZZZ");
             }
     }
     
