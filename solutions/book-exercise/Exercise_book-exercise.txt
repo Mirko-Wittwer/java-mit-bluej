@@ -69,10 +69,12 @@ public int getBorrowed()	(in book-exercise ab Zeile 96)
 2.91
 private boolean courseText;		(in book-exercise Zeile 17)
 
-courseText = true;				(in book-exercise Zeile )
+courseText = true;				(in book-exercise Zeile 30)
 
 private void isCourseText()	(in book-exercise ab Zeile 103)
-{}
+{isCourseText = courseText;
+ if(isCourseText == true){ 
+ returen isCourseTest;}}
 
 
 

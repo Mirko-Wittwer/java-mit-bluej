@@ -102,6 +102,9 @@ class Book
     
     private void isCourseText()
     {
+        isCourseText = courseText;
+        if(isCourseText == true)
+        { returen isCourseTest;}
     }
-        
-}
+}    
+
