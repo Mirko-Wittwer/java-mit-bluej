@@ -100,11 +100,9 @@ class Book
         return borrowed;
     }
     
-    private void isCourseText()
+    public boolean getIsCourseText()
     {
-        isCourseText = courseText;
-        if(isCourseText == true)
-        { returen isCourseTest;}
+        return courseText;
     }
 }    
 
