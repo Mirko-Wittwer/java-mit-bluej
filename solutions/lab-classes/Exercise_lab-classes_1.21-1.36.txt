@@ -64,7 +64,9 @@ if(name.length()<4 || id.length()<3)
 2.78
 in lab-classes/Student ab Zeile 77
 public String getLoginName(){
-return name + id;}
+if(name.length() > 3){
+return name;}
+else{return name + id;}}
 
 2.79
 102 -> 102
